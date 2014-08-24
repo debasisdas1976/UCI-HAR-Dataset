@@ -53,7 +53,7 @@ To run the script, source **run_analysis.R** script into the R environment and c
 ```
 
  The script outputs following messages to the console during successful execution
-
+```
   Loading the train dataset...
   Loading the test dataset...
   Loading other data files...
@@ -62,16 +62,12 @@ To run the script, source **run_analysis.R** script into the R environment and c
   Merging the train and test datasets...
   Calculating mean values of selected measurements...
   Processing complete and following two files are created
-   - UCI-HAR-Dataset-Tidy.txt - Final tidy data set
-
+  - UCI-HAR-Dataset-Tidy.txt - Final tidy data set
+```
 It also returns a data.frame which contains the tidy data set.
 
-7. Once executed successfully, it returns the data.frame which contains the final tidy dataset. The script also stores the 
-
-final dataset in the following file in your current working directory.
+7. Once executed successfully, it returns the data.frame which contains the final tidy dataset. The script also stores the final dataset in the following file in your current working directory.
 
 **UCI-HAR-Dataset-Tidy.txt**
 
-The output file is in csv format. The variables are explained in the [Codebook.md](https://github.com/debasisdas1976/UCI-
-
-HAR-Dataset/Codebook.md) file.
+The output file is in csv format. The variables are explained in the [Codebook.md](https://github.com/debasisdas1976/UCI-HAR-Dataset/Codebook.md) file.
