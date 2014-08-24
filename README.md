@@ -3,9 +3,8 @@ Project Details
 
 This project is about creating a tidy dataset from the original raw dataset available at
 
-[https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip]
+ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
-(https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip)
 
 The dataset contains data collected from the accelerometers from the Samsung Galaxy S smartphone.
 
@@ -20,12 +19,9 @@ The file **Codebook.md**, which describes the variables in the final tiday datas
 To run the script
 =================
 
-1. Download and store the [zip](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip) 
+1. Download and store the [zip](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip) file into to a directory.
 
-file into to a directory.
-
-2. Untar the zip file into a directory. After unzip, go the the directory which contain the following subdirectories and 
-
+2. Untar the zip file into a directory. After unzip, go the the directory which contain the following subdirectories and
 data files.
 
 ```
@@ -38,9 +34,8 @@ data files.
 + features.txt - features for which observations were noted
 + activity_labels.txt - activity labels
 ```
-3. Set the above directory (under which the above datasets are available) as the current working directory of R 
 
-environment. This can be done by using setwd()
+3. Set the above directory (under which the above datasets are available) as the current working directory of R  environment. This can be done by using setwd()
 
 ```
 e.g. setwd( "G:\\GetCleanData\\getdata-projectfiles-UCI HAR Dataset\\UCI HAR Dataset" )
@@ -50,9 +45,8 @@ Download and copy the script run_analysis.R in your current working directory
 4. Install the package plyr in your R environment, if it is not already installed.
 
 5. install.packages( "plyr" )
-
-```
 To run the script, source **run_analysis.R** script into the R environment and call **prepareTidyDataSet()** function
+
 ```
 > source( "run_analysis.R")
 > finaldataset <- prepareTidyDataSet()
