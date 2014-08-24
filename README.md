@@ -19,10 +19,10 @@ The file **Codebook.md**, which describes the variables in the final tiday datas
 To run the script
 =================
 
-1. Download and store the [zip](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip) file into to a directory.
+* Download and store the [zip](https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip) file into to a directory.
 
-2. Untar the zip file into a directory. After unzip, go the the directory which contain the following subdirectories and
-data files.
+* Untar the zip file into a directory. After unzip, go the the directory which contain the following subdirectories and
+data files. 
 
 ```
 + train/X_train.txt - Train datasets with features observations 
@@ -35,16 +35,16 @@ data files.
 + activity_labels.txt - activity labels
 ```
 
-3. Set the above directory (under which the above datasets are available) as the current working directory of R  environment. This can be done by using setwd()
+* Set the above directory (under which the above datasets are available) as the current working directory of R  environment. This can be done by using setwd()
 
 ```
 e.g. setwd( "G:\\GetCleanData\\getdata-projectfiles-UCI HAR Dataset\\UCI HAR Dataset" )
 Download and copy the script run_analysis.R in your current working directory
 ```
 
-4. Install the package plyr in your R environment, if it is not already installed.
+* Install the package plyr in your R environment, if it is not already installed.
+* install.packages( "plyr" )
 
-5. install.packages( "plyr" )
 To run the script, source **run_analysis.R** script into the R environment and call **prepareTidyDataSet()** function
 
 ```
@@ -52,7 +52,8 @@ To run the script, source **run_analysis.R** script into the R environment and c
 > finaldataset <- prepareTidyDataSet()
 ```
 
- The script outputs following messages to the console during successful execution
+* The script outputs following messages to the console during successful execution
+
 ```
   Loading the train dataset...
   Loading the test dataset...
@@ -66,8 +67,8 @@ To run the script, source **run_analysis.R** script into the R environment and c
 ```
 It also returns a data.frame which contains the tidy data set.
 
-7. Once executed successfully, it returns the data.frame which contains the final tidy dataset. The script also stores the final dataset in the following file in your current working directory.
+* Once executed successfully, it returns the data.frame which contains the final tidy dataset. The script also stores the final dataset in the following file in your current working directory.
 
 **UCI-HAR-Dataset-Tidy.txt**
 
-The output file is in csv format. The variables are explained in the [Codebook.md](https://github.com/debasisdas1976/UCI-HAR-Dataset/Codebook.md) file.
+* The output file is in csv format. The variables are explained in the [Codebook.md](https://github.com/debasisdas1976/UCI-HAR-Dataset/Codebook.md) file.
